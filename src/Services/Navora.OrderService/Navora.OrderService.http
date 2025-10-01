@@ -1,0 +1,6 @@
+@Navora.OrderService_HostAddress = http://localhost:5152
+
+GET {{Navora.OrderService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
