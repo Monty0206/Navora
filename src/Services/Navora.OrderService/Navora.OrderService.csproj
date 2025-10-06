@@ -8,10 +8,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Navora.OrderService.Application\Navora.OrderService.Application.csproj" />
+    <ProjectReference Include="..\Navora.OrderService.Domain\Navora.OrderService.Domain.csproj" />
+    <ProjectReference Include="..\Navora.OrderService.Infrastructure\Navora.OrderService.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
